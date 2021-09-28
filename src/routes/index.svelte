@@ -1,2 +1,18 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import Toggle from '$lib/Toggle.svelte';
+	let isToggled: boolean = true;
+</script>
+
+<h1>Welcome to Mayan UI</h1>
+
+<Toggle
+	bind:isToggled
+	label="Beta"
+	toggleBackgroundColor="azure"
+	toggleButtonColor="floralwhite"
+	toggleCheckedBgColor="darkturquoise"
+/>
+
+{#if isToggled}
+	<h1>I'm Toggled</h1>
+{/if}
