@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Field from '$lib/Field.svelte';
+	import Markdown from '$lib/Markdown.svelte';
 
 	let items = ['Samson', 'scott', 'wes', 'landon', 'courtney', 'lucie', 'brooklyn'];
 	let search = '';
@@ -7,11 +7,5 @@
 
 <div style="width: 100%; padding:0.5rem 0.25rem;">
 	<h1>Welcome to Mayan UI</h1>
-	<Field
-		bind:value={search}
-		label="search"
-		instructions="Type to search"
-		placeholder="Joe"
-		type="text"
-	/>
+	<Markdown />
 </div>
