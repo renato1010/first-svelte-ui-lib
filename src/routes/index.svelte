@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SearchFilter from '$lib/SearchFilter.svelte';
+	import Field from '$lib/Field.svelte';
 
 	let items = ['Samson', 'scott', 'wes', 'landon', 'courtney', 'lucie', 'brooklyn'];
 	let search = '';
@@ -7,7 +7,11 @@
 
 <div style="width: 100%; padding:0.5rem 0.25rem;">
 	<h1>Welcome to Mayan UI</h1>
-	<p>Term: {search}</p>
-
-	<SearchFilter {items} bind:search />
+	<Field
+		bind:value={search}
+		label="search"
+		instructions="Type to search"
+		placeholder="Joe"
+		type="text"
+	/>
 </div>
