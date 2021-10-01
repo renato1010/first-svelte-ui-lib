@@ -39,9 +39,12 @@
 		<slot />
 	</div>
 </div> -->
-<div use:portal hidden>
+<div use:portal hidden class="app-portal">
 	<slot />
 </div>
 
 <style>
+	.app-portal {
+		position: relative;
+	}
 </style>
