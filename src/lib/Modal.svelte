@@ -42,9 +42,6 @@
 		flex-direction: column;
 		align-items: center;
 	}
-	.content-wrapper :global(:is(h2, h3, p)) {
-		text-align: justify;
-	}
 	.close-button {
 		display: inline-block;
 		align-self: end;
