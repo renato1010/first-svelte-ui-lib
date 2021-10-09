@@ -2,8 +2,9 @@
 	// import Toast from '$lib/toast/Toast.svelte';
 	// import { toast } from '$lib/toast/toast';
 	import Modal from '$lib/Modal.svelte';
+	import { Tabs, Tab } from '$lib/tabs';
 
-	let isModalOpen = true;
+	let isModalOpen = false;
 	const closeModal = () => (isModalOpen = false);
 </script>
 
@@ -11,7 +12,7 @@
 	<h1>Welcome to Mayan UI</h1>
 </div>
 
-<button on:click={() => (isModalOpen = !isModalOpen)}>Toggle Modal</button>
+<!-- <button on:click={() => (isModalOpen = !isModalOpen)}>Toggle Modal</button> -->
 <!-- <Toast options={{ standalone: true, duration: 3000 }} /> -->
 
 <Modal {isModalOpen} {closeModal}>
@@ -28,3 +29,9 @@
 		dolore enim!
 	</p>
 </Modal>
+
+<Tabs>
+	<Tab slot="lemon"><p class="tab-content lemon hide">Lemon is yellow</p></Tab>
+	<Tab slot="strawberry"><p class="tab-content strawberry hide">Strawberry is red</p></Tab>
+	<Tab slot="pear"><p class="tab-content pear hide">Pear is green</p></Tab>
+</Tabs>
