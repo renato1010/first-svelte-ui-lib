@@ -9,7 +9,7 @@
 </script>
 
 <div style="width: 100%; padding:0.5rem 0.25rem;">
-	<h1>Welcome to Mayan UI</h1>
+	<h1>Welcome to My new and awesome Svelte component library</h1>
 </div>
 
 <!-- <button on:click={() => (isModalOpen = !isModalOpen)}>Toggle Modal</button> -->
